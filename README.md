@@ -1,73 +1,72 @@
-# [Bedrock](https://roots.io/bedrock/)
-[![Build Status](https://travis-ci.org/roots/bedrock.svg)](https://travis-ci.org/roots/bedrock)
+## Overview
+This repository tracks changes for [SyncHub].
 
-Bedrock is a modern WordPress stack that helps you get started with the best development tools and project structure.
+## What's Involved
+1. This project is based on [Bedrock]. Therefore,
+its code is managed by [Git] and [Composer].
+This is why there is no [WordPress], or plugin/theme code here: these are all
+merely **dependencies** of this project, and are automatically and recursively
+installed at their most appropriate for the environment versions.
+2. This project uses [Capistrano] for deployment, and relevant configs are
+derived from the [bedrock-capistrano] project.
+3. For local development server, this projetct derives relevant configuration
+from [ScotchBox], albeit slightly modifying it to cater for specifics.
 
-Much of the philosophy behind Bedrock is inspired by the [Twelve-Factor App](http://12factor.net/) methodology including the [WordPress specific version](https://roots.io/twelve-factor-wordpress/).
+## Local Setup
 
-## Features
+1. Install [Git](https://git-scm.com/downloads);
 
-* Better folder structure
-* Dependency management with [Composer](http://getcomposer.org)
-* Easy WordPress configuration with environment specific files
-* Environment variables with [Dotenv](https://github.com/vlucas/phpdotenv)
-* Autoloader for mu-plugins (use regular plugins as mu-plugins)
-* Enhanced security (separated web root and secure passwords with [wp-password-bcrypt](https://github.com/roots/wp-password-bcrypt))
+This is the version control software used to manage this project's code.
+Installing this on Windows will also install [Git Bash], which is a Unix shell
+emulator. If you're on Windows, every time you are told to run something in [CLI],
+this is what you should use.
 
-Use [Trellis](https://github.com/roots/trellis) for additional features:
+2. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads);
 
-* Easy development environments with [Vagrant](http://www.vagrantup.com/)
-* Easy server provisioning with [Ansible](http://www.ansible.com/) (Ubuntu 14.04, PHP 5.6 or HHVM, MariaDB)
-* One-command deploys
+This allows bringing up a virtual server locally, on your computer, and run the website inside it.
 
-See a complete working example in the [roots-example-project.com repo](https://github.com/roots/roots-example-project.com).
+3. Install [Vagrant](https://www.vagrantup.com/downloads.html);
 
-## Requirements
+Vagrant is a way to configure and manage virtual environments.
 
-* PHP >= 5.5
-* Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+4. [Clone](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#_git_cloning) this repository;
 
-## Installation
+This will download the project files to your computer.
 
-1. Create a new project - `composer create-project roots/bedrock`
-2. Copy `.env.example` to `.env` and update environment variables:
-  * `DB_NAME` - Database name
-  * `DB_USER` - Database user
-  * `DB_PASSWORD` - Database password
-  * `DB_HOST` - Database host
-  * `WP_ENV` - Set to environment (`development`, `staging`, `production`)
-  * `WP_HOME` - Full URL to WordPress home (http://example.com)
-  * `WP_SITEURL` - Full URL to WordPress including subdirectory (http://example.com/wp)
-  * `AUTH_KEY`, `SECURE_AUTH_KEY`, `LOGGED_IN_KEY`, `NONCE_KEY`, `AUTH_SALT`, `SECURE_AUTH_SALT`, `LOGGED_IN_SALT`, `NONCE_SALT` - Generate with [wp-cli-dotenv-command](https://github.com/aaemnnosttv/wp-cli-dotenv-command) or from the [Roots WordPress Salt Generator](https://roots.io/salts.html)
-3. Add theme(s) in `web/app/themes` as you would for a normal WordPress site.
-4. Set your site vhost document root to `/path/to/site/web/` (`/path/to/site/current/web/` if using deploys)
-5. Access WP admin at `http://example.com/wp/wp-admin`
+5. In the project's folder, run `composer update` in [CLI];
 
-## Deploys
+This will install project dependencies. It can take some time to download WordPress.
 
-There are two methods to deploy Bedrock sites out of the box:
+6. In the project's folder, run [`vagrant up`](https://www.vagrantup.com/docs/cli/up.html) in [CLI];
 
-* [Trellis](https://github.com/roots/trellis)
-* [bedrock-capistrano](https://github.com/roots/bedrock-capistrano)
+This may take 15 minutes the first time, due to Vagrant downloading the virtual image.
 
-Any other deployment method can be used as well with one requirement:
+7. Navigate to [192.168.33.10](http://192.168.33.10/) in your browser;
 
-`composer install` must be run as part of the deploy process.
+The first time WordPress installation steps would need to be completed.
 
-## Documentation
+## Deployment
+This project includes configuration files that allow very easy, atomic,
+and reversible deployments. Therefore, in order to deploy this project,
+[Capistrano] is required, and in turn requires [Ruby]. It can take some time and
+effort to configure everything the first time. Due to this, it is recommended
+to leave the development and deployment of this project to a professional.
 
-Bedrock documentation is available at [https://roots.io/bedrock/docs/](https://roots.io/bedrock/docs/).
+1. Install [Ruby](https://www.ruby-lang.org/en/documentation/installation);
+2. Install [Bundler];
+3. Install project dependencies by running `bundle install`, which will install [Capistrano], among other things;
+4. Run `bundle exec cap production deploy` to deploy, which will ask for SSH password.
 
-## Contributing
+[SyncHub]:                              http://synchub.org
+[Git]:                                  https://git-scm.com/
+[Git Bash]:                             https://superuser.com/a/1053657/268433
+[Bedrock]:                              https://github.com/roots/bedrock
+[Composer]:                             https://getcomposer.org/
+[Ruby]:                                 https://www.ruby-lang.org
+[Capistrano]:                           http://capistranorb.com/
+[Bundler]:                              http://bundler.io/
+[WordPress]:                            https://wordpress.org/
+[bedrock-capistrano]:                   https://github.com/roots/bedrock-capistrano
+[ScotchBox]:                            https://box.scotch.io/
 
-Contributions are welcome from everyone. We have [contributing guidelines](https://github.com/roots/guidelines/blob/master/CONTRIBUTING.md) to help you get started.
-
-## Community
-
-Keep track of development and community news.
-
-* Participate on the [Roots Discourse](https://discourse.roots.io/)
-* Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-* Read and subscribe to the [Roots Blog](https://roots.io/blog/)
-* Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
-* Listen to the [Roots Radio podcast](https://roots.io/podcast/)
+[CLI]:                                  https://en.wikipedia.org/wiki/Command-line_interface
