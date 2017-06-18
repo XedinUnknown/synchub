@@ -1,28 +1,16 @@
 {
-  "name": "roots/bedrock",
+  "name": "XedinUnknown/synchub",
   "type": "project",
   "license": "MIT",
-  "description": "A modern WordPress stack",
-  "homepage": "https://roots.io/bedrock/",
+  "description": "The website for synchub.com",
+  "homepage": "http://synchub.com",
   "authors": [
     {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+      "name": "Anton Ukhanev",
+      "email": "xedin.unknown@gmail.com",
+      "homepage": "https://github.com/XedinUnknown"
     }
   ],
-  "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
-  ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
-  },
   "config": {
     "preferred-install": "dist"
   },
