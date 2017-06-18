@@ -4,8 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b69a857b5839bcfcc566e35f02895e61",
+    "content-hash": "9ac1fb7984bef946b2e6b6108600ad38",
     "packages": [
+        {
+            "name": "aukhanev/js_composer",
+            "version": "v4.11.2.1",
+            "source": {
+                "type": "git",
+                "url": "bitbucket-aukhanev:aukhanev/js_composer.git",
+                "reference": "701ba1e14cfcbadfa20d2dc7d909dab3815fcfd3"
+            },
+            "require": {
+                "php": "^5.3 | ^7.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.3"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Ukhanev",
+                    "email": "xedin.unknown@gmail.com"
+                }
+            ],
+            "description": "WPBakery's Visual Composer",
+            "time": "2017-06-18T18:54:41+00:00"
+        },
         {
             "name": "aukhanev/kolumn",
             "version": "v1.1.1",
