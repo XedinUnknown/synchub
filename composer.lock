@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba5c29da92d8c4bc5f9ab40a18a2bede",
+    "content-hash": "f5c3eed1193bb2e6682889664d2aa8ca",
     "packages": [
         {
             "name": "aukhanev/edge-cpt",
@@ -29,6 +29,30 @@
             ],
             "description": "Custom post types for Edge, the WP theme framework",
             "time": "2017-06-18T19:11:19+00:00"
+        },
+        {
+            "name": "aukhanev/edge-instagram-feed",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "bitbucket-aukhanev:aukhanev/edge-instagram-feed.git",
+                "reference": "9daa376cf1fc94e6e80c2fd92b8719841be1f38b"
+            },
+            "require": {
+                "php": "^5.3 | ^7.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Ukhanev",
+                    "email": "xedin.unknown@gmail.com"
+                }
+            ],
+            "description": "Plugin that adds Instagram feed functionality to Edge, the WP theme framework, and its derivatives, such as Kolumn.",
+            "time": "2017-06-18T19:18:00+00:00"
         },
         {
             "name": "aukhanev/js_composer",
