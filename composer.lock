@@ -108,9 +108,13 @@
             "source": {
                 "type": "git",
                 "url": "bitbucket-aukhanev:aukhanev/kolumn.git",
-                "reference": "d73c9c8150ac709545e5b2fc4d20dfe4e8ca8fb2"
+                "reference": "1adb7a76065bea3318b34f2ab85e91dd4241a232"
             },
             "require": {
+                "aukhanev/edge-cpt": "^1.0",
+                "aukhanev/edge-instagram-feed": "^1.0",
+                "aukhanev/edge-twitter-feed": "^1.0",
+                "aukhanev/js_composer": "^4.11.2",
                 "php": "^5.3 | ^7.0"
             },
             "type": "wordpress-theme",
@@ -124,7 +128,7 @@
                 }
             ],
             "description": "The Kolumn theme for WP",
-            "time": "2017-06-18T16:26:56+00:00"
+            "time": "2017-06-18T19:58:45+00:00"
         },
         {
             "name": "composer/installers",
@@ -511,7 +515,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/duplicate-post.3.2.zip",
-                "reference": "tags/3.2",
+                "reference": null,
                 "shasum": null
             },
             "require": {
