@@ -4,8 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ac1fb7984bef946b2e6b6108600ad38",
+    "content-hash": "ba5c29da92d8c4bc5f9ab40a18a2bede",
     "packages": [
+        {
+            "name": "aukhanev/edge-cpt",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "bitbucket-aukhanev:aukhanev/edge-cpt.git",
+                "reference": "66fd6ab9dee2adb7bcbc377d856b22ffcb04bc71"
+            },
+            "require": {
+                "php": "^5.3 | ^7.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Ukhanev",
+                    "email": "xedin.unknown@gmail.com"
+                }
+            ],
+            "description": "Custom post types for Edge, the WP theme framework",
+            "time": "2017-06-18T19:11:19+00:00"
+        },
         {
             "name": "aukhanev/js_composer",
             "version": "v4.11.2.1",
