@@ -37,6 +37,7 @@
 
     "wpackagist-plugin/duplicate-post": "^3.2",
     "wpackagist-plugin/team-members": "3.0.1",
+    "wpackagist-plugin/wordpress-importer": "0.6.3",
     "xedinunknown/synchub-theme": "^0.1"
   },
   "require-dev": {
