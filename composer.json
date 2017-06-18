@@ -37,6 +37,10 @@
     {
       "type": "vcs",
       "url": "bitbucket-aukhanev:aukhanev/edge-instagram-feed.git"
+    },
+    {
+      "type": "vcs",
+      "url": "bitbucket-aukhanev:aukhanev/edge-twitter-feed.git"
     }
   ],
   "require": {
@@ -53,7 +57,8 @@
     "xedinunknown/synchub-theme": "^0.1",
     "aukhanev/js_composer": "^4.11.2",
     "aukhanev/edge-cpt": "^1.0",
-    "aukhanev/edge-instagram-feed": "^1.0"
+    "aukhanev/edge-instagram-feed": "^1.0",
+    "aukhanev/edge-twitter-feed": "^1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
