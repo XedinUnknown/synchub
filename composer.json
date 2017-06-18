@@ -21,6 +21,10 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "bitbucket-aukhanev:aukhanev/kolumn.git"
     }
   ],
   "require": {
@@ -29,7 +33,11 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "^4.8",
     "oscarotero/env": "^1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+
+    "wpackagist-plugin/duplicate-post": "^3.2",
+    "wpackagist-plugin/team-members": "3.0.1",
+    "xedinunknown/synchub-theme": "^0.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

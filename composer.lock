@@ -4,8 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d47e5b8ca57d9433d288d2634e4c97b5",
+    "content-hash": "94bbbebce6dee8bf7a5fe177484e6c75",
     "packages": [
+        {
+            "name": "aukhanev/kolumn",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "bitbucket-aukhanev:aukhanev/kolumn.git",
+                "reference": "d73c9c8150ac709545e5b2fc4d20dfe4e8ca8fb2"
+            },
+            "require": {
+                "php": "^5.3 | ^7.0"
+            },
+            "type": "wordpress-theme",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Ukhanev",
+                    "email": "xedin.unknown@gmail.com"
+                }
+            ],
+            "description": "The Kolumn theme for WP",
+            "time": "2017-06-18T16:26:56+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.25",
@@ -379,6 +403,78 @@
                 "environment"
             ],
             "time": "2016-09-01T10:05:43+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/duplicate-post",
+            "version": "3.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/duplicate-post/",
+                "reference": "tags/3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/duplicate-post.3.2.zip",
+                "reference": "tags/3.2",
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/duplicate-post/"
+        },
+        {
+            "name": "wpackagist-plugin/team-members",
+            "version": "3.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/team-members/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/team-members.zip?timestamp=1491999387",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/team-members/"
+        },
+        {
+            "name": "xedinunknown/synchub-theme",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/XedinUnknown/synchub-theme.git",
+                "reference": "63c286996fe2ea86741825ad1949e60db8052fe7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/XedinUnknown/synchub-theme/zipball/63c286996fe2ea86741825ad1949e60db8052fe7",
+                "reference": "63c286996fe2ea86741825ad1949e60db8052fe7",
+                "shasum": ""
+            },
+            "require": {
+                "aukhanev/kolumn": "^1.1",
+                "php": "^5.3 | ^7.0"
+            },
+            "type": "wordpress-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Ukhanev",
+                    "email": "xedin.unknown@gmail.com"
+                }
+            ],
+            "description": "The SyncHub theme, which is a child of the Kolumn theme",
+            "time": "2017-06-18T16:49:12+00:00"
         }
     ],
     "packages-dev": [
